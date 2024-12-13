@@ -1,0 +1,18 @@
+name: Absent-present
+description: A new Flutter project for class attendance management
+
+publish_to: 'none' # Prevent publishing to pub.dev
+
+dependencies:
+  flutter:
+    sdk: flutter
+  hijri: ^1.0.0
+  excel: ^2.0.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+  
