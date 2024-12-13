@@ -1,0 +1,25 @@
+# Flutter specific
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.idea/
+.packages
+pubspec.lock
+build/
+ios/Flutter/Flutter.podspec
+ios/Podfile
+ios/Podfile.lock
+ios/Pods/
+ios/.symlinks/
+
+# Android Studio
+*.iml
+.idea/
+
+# VS Code
+.vscode/
+
+# macOS
+macos/Flutter/Flutter.podspec
+macos/Pods/
+macos/.symlinks/
