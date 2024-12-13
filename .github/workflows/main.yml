@@ -1,0 +1,32 @@
+name: Build Flutter APK
+
+on:
+  push:
+    branches:
+      - main  # یا master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v2
+
+    - name: Set up Flutter
+      uses: subosito/flutter-action@v2
+      with:
+        flutter-version: '3.0.0' # نسخه فلاتر مورد نظر شما
+
+    - name: Install dependencies
+      run: flutter pub get
+
+    - name: Build APK
+      run: flutter build apk --release
+
+    - name: Upload APK as an artifact
+      uses: actions/upload-artifact@v2
+      with:
+        name: apk
+        path: build/app/outputs/flutter-apk/app-release.apk
+        
